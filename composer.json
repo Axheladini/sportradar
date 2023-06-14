@@ -1,0 +1,21 @@
+{
+    "name": "sportradar/app",
+    "description": "Test application for interview!",
+    "type": "library",
+    "require": {
+        "widop/http-adapter": "*"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agon Xheladini",
+            "email": "agonxheladini001@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
