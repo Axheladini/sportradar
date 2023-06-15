@@ -27,7 +27,7 @@ class FootballMatch {
 
        $this->update_match_score($home_score, $away_score);
        $this->set_match_status("In Progress");
-
+    
     }
         
     /**

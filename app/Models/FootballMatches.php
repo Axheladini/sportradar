@@ -12,6 +12,18 @@ namespace App\Models;
 
 class FootballMatches {
 
+    private $scoreboard = [];
+
+    function __construct($scoreboard_array) {
+
+        $this->$scoreboard = $scoreboard_array;
+     
+     }
+
+     function set_scoreboard($scoreboard_array){
+        $this->$scoreboard = $scoreboard_array;
+     }
+
 }
 
 
