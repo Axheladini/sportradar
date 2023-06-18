@@ -91,7 +91,15 @@ class FootballMatch {
         $this->total_score = $total_score;
 
     }
-    
+    /**
+     * Get total score
+     *
+     * @return integer the total scores of the match.
+     */
+    function get_match_total_score() {
+
+        return $this->total_score;
+    }
      /**
      * Get home team name
      *
