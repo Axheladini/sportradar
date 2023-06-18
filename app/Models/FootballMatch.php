@@ -13,20 +13,28 @@ namespace App\Models;
 class FootballMatch {
     
     /**   The score of the home team $var Integer */
+    protected $id;
+    /**   The score of the home team $var Integer */
     protected $home_team_score;
     /**   The score of the away team $var Integer */
     protected $away_team_score;
     /**   The name of the home team $var String */
-    private $home_team;
+    protected $home_team;
     /**   The name of the away team $var String */
-    private $away_team;
+    protected $away_team;
     /**   The match status $var String */
     protected $match_status;
+    /**   The match total score */
+    protected $total_score;
 
-    function __construct($home_score, $away_score) {
+    function __construct($matchArray) {
 
-       $this->update_match_score($home_score, $away_score);
-       $this->set_match_status("In Progress");
+       $this->set_home_team_name($matchArray->home_team);
+       $this->set_away_team_name($matchArray->away_team);
+       $this->update_match_score($matchArray->home_team_score, $matchArray->away_team_score);
+       $this->set_match_status($matchArray->match_status);
+       $this->set_match_id($matchArray->id);
+       $this->set_match_total_score($matchArray->total_score);
     
     }
         
@@ -62,6 +70,47 @@ class FootballMatch {
 
     }
 
+      /**
+     * Set match_id
+     *
+     * @param integer $match_id, the id of match.
+     */
+    function set_match_id($match_id) {
+
+        $this->id = $match_id;
+
+    }
+
+    /**
+     * Set total score
+     *
+     * @param integer $total_score.
+     */
+    function set_match_total_score($total_score) {
+
+        $this->total_score = $total_score;
+
+    }
+    
+     /**
+     * Get home team name
+     *
+     * @return string the name of the home team.
+     */
+    function get_home_team_name() {
+
+        return $this->home_team;
+    }
+
+    /**
+     * Get away team name
+     *
+     * @return string the name of the away team.
+     */
+    function get_away_team_name() {
+
+        return $this->away_team;
+    }
 
     /**
      * Get the score of the home team
@@ -93,6 +142,14 @@ class FootballMatch {
         return $this->match_status;
     }
 
+     /**
+     * Get match_id
+     *
+     * @param integer $match_id, the id of match.
+     */
+    function get_match_id() {
+       return $this->id; 
+    }
 
     /**
      * Set the score for the home team

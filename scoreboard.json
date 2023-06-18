@@ -1,0 +1,47 @@
+[
+    {
+        "home_team": "FC K\u00f6ln",
+        "away_team": "FSV Mainz 05",
+        "home_team_score": 3,
+        "away_team_score": 3,
+        "match_status": "progress",
+        "total_score": 6,
+        "id": 3
+    },
+    {
+        "home_team": "FC Augsburg",
+        "away_team": "FC Schalke 04",
+        "home_team_score": 1,
+        "away_team_score": 3,
+        "match_status": "progress",
+        "total_score": 4,
+        "id": 2
+    },
+    {
+        "home_team": "TSG Hoffenheim",
+        "away_team": "FC Union Berlin",
+        "home_team_score": 3,
+        "away_team_score": 0,
+        "match_status": "progress",
+        "total_score": 3,
+        "id": 4
+    },
+    {
+        "home_team": "FC Bayern M\u00fcnchen",
+        "away_team": "VfL Wolfsburg",
+        "home_team_score": 2,
+        "away_team_score": 0,
+        "match_status": "progress",
+        "total_score": 2,
+        "id": 1
+    },
+    {
+        "home_team": "RB Leipzig",
+        "away_team": "Eintracht Frankfurt",
+        "home_team_score": 1,
+        "away_team_score": 0,
+        "match_status": "progress",
+        "total_score": 1,
+        "id": 5
+    }
+]

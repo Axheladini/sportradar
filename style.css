@@ -1,0 +1,71 @@
+
+.form_holder{ margin-top: 20px;}
+.field{ width: auto !important; display: inline-block}
+.team_score_field{ width: 5% !important;}
+.team_score::-webkit-input-placeholder {
+    font-size: 11px;
+}
+.field_error_message{
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 12px;
+    line-height: 14px;
+    color: red;
+}
+.main_container_holder{
+    margin-top: 20px !important;
+    max-width: 680px !important;
+    padding: 20px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    background: #FAF9F6;
+}
+.main_container_holder .columns .column{
+    border-bottom: 1px solid #fcababcb;
+    
+}
+.main_container_holder .columns input{
+    text-align: center;
+    line-height: 15px;
+    border-color: #fcababcb !important;
+    padding: 3px !important;
+}
+.home_team_col{
+    text-align: right;
+    line-height: 35px;
+    font-weight: 500;
+}
+.away_team_col{
+    text-align: left;
+    line-height: 35px;
+    font-weight: 500;
+}
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #fcababcb !important;
+}
+.add_match_btn{
+    float: right;
+    display: inline-block;
+}
+.button.match_update_btn{
+    background: #f00 !important;
+}
+
+.button.match_update_btn:hover{
+    background: #fcababcb !important;
+}
+.add_match_btn{
+    border: 1px solid #f00 !important;
+    color: #f00 !important;
+}
+.add_match_btn:hover{
+    background: #fcababcb !important;
+}
+.custom-logo-link img{
+  width: 180px;
+  height: auto;
+  margin-bottom: 25px;
+}
+.error__message a{
+    color: #f00 !important;
+}
