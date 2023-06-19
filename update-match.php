@@ -42,7 +42,7 @@ if (!empty($_POST)):
      }
      else{
        /* When json is written to the file */  
-       echo "<p class='success_message'>Match updated successfully! <a href='/'>Back to scoreboard</a></p>";
+       echo "<p class='success_message'>Match updated successfully! <a href='/sport-radar'>Back to scoreboard</a></p>";
        echo "<p class='success_message'>The page will redirect automatically after 5 sec.</p>";
  
         
