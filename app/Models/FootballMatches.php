@@ -1,7 +1,7 @@
 <?php
 namespace App\Models;
 /** 
-*  Matches for
+*  Football Matches scoreboard array
 *  
 *  Through this class we are able keep the scoreboard in array and work with the array!
 *  
