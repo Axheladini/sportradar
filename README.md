@@ -15,7 +15,6 @@ PHP PSR-4 with Composer
 
  ```
  composer install
-
  ```
  This will install vendor folder and other dependecies. 
  point to your localhost like: http://localhost/sport-radar so you can test the app. 
@@ -25,6 +24,5 @@ PHP PSR-4 with Composer
  * PHPunit test cases are under tests directory. Cmd under C:\xampp\htdocs\sport-radar and run the bellow command to execute tests. 
  ```
 ./vendor/bin/phpunit --testdox tests
-
  ```
  * Image screens can be found under screens directory 
