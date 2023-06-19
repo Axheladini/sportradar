@@ -55,8 +55,8 @@ else{
   }/** Foreach ends here */
 }/** Else ends here */
 ?>
-<div class="columns">
- <div class="column">
+<div class="columns match_last_block">
+ <div class="column match_last_column">
   <a class="button is-primary is-outlined add_match_btn" href="add-match.php">Add a match</a>
 </div>
 </div>

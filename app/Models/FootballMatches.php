@@ -17,25 +17,45 @@ class FootballMatches {
     protected $ArrayScoreboard = [];
 
     function __construct($scoreboardArray){
+      /** Assign the array from the file to the class Array*/
       $this->ArrayScoreboard = $scoreboardArray;
-      if(is_array($scoreboardArray)){
-         $this->sort_scoreboard_by_goals();
-      }
+      /** If it is an Array sort it based on the method*/
+      if(is_array($scoreboardArray)){ $this->sort_scoreboard_by_goals();}
       
     }
 
+    /**
+    * Set the scoreboard array 
+    *
+    * @param array $scoreboard_array.
+    */
     function set_scoreboard($scoreboard_array){
       $this->ArrayScoreboard = $scoreboard_array; 
-   }
-
+    }
+    
+    /**
+    * Get scoreboard
+    *
+    * @return array the scoreboard list.
+    */
     function get_scoreboard(){
       return $this->ArrayScoreboard;
     }
-
+    
+    /**
+    * Add a new single record to the scoreboard array 
+    *
+    * @return array $record.
+    */
     function add_record_to_scoreboard($record){
       array_push($this->ArrayScoreboard, $record);
     }
-
+   
+    /**
+    * Update match score and status 
+    *
+    * @return array updates $record.
+    */
     function update_match_score($home_team_score, $away_team_score, $status, $id){
       
       foreach ($this->ArrayScoreboard as $value) {
@@ -51,16 +71,18 @@ class FootballMatches {
          
        }
     }
-
+   /**
+    * Sort the scoreboard in DESC order. 
+    *
+    * @return array sorted scoreboard.
+    */
    function sort_scoreboard_by_goals(){
       
       $col = array_column( $this->ArrayScoreboard, "total_score" );
       array_multisort( $col, SORT_DESC, $this->ArrayScoreboard );
+
    }
 
 }
-
-
-
 
 ?>

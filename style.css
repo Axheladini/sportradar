@@ -1,4 +1,16 @@
+@media only screen and (max-width: 769px) {
 
+    .home_team_col{ text-align: center !important;}
+    .away_team_col{ text-align: center !important;}
+    .match_status{ text-align: center !important;}
+    .match_update_btn{ text-align: center !important;}
+
+    .match_last_block{ height: 65px; }
+    .match_last_column{ height: 60px }
+
+    .add_match_btn { float: none !important;}
+    .match_last_column{ text-align: center !important; }
+}
 .form_holder{ margin-top: 20px;}
 .field{ width: auto !important; display: inline-block}
 .team_score_field{ width: 5% !important;}
@@ -68,4 +80,6 @@
 }
 .error__message a{
     color: #f00 !important;
+    
 }
+
