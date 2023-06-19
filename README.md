@@ -17,7 +17,7 @@ PHP PSR-4 with Composer
  composer install
  ```
  This will install vendor folder and other dependecies. 
- point to your localhost like: http://localhost/sport-radar so you can test the app. 
+ Point to your localhost like: http://localhost/sport-radar so you can test the app. 
 
  ## Additional Documentation and Acknowledgments
 
